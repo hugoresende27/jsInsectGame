@@ -47,6 +47,21 @@ h1{
     /* width: 150px;
     height: 150px; */
 }
+
+.btn2 {
+    border: 0;
+    background-color: #fff;
+    color: var(--blue-cor);
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.caixaBtn2{
+    position: absolute;
+    top: 20px;
+}
+
 .btn:focus{
     outline: 0;
 }

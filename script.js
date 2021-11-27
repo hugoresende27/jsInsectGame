@@ -1,6 +1,8 @@
 const ecras = document.querySelectorAll('.screen')
 const botoesEscolhe = document.querySelectorAll('.escolheBtn')
 const start = document.getElementById('start')
+const voltar = document.getElementById('voltar')
+const voltar2 = document.getElementById('voltar2')
 const conteudo = document.querySelector('.gameMain')
 const tempoEL = document.getElementById('tempo')
 const scoreEL = document.getElementById('score')
@@ -13,6 +15,13 @@ let escolha = {}
 // ecras[0].classList.add('up')
 start.addEventListener('click', () => {
     ecras[0].classList.add('up')
+})
+
+voltar.addEventListener('click', () => {
+    ecras[0].classList.remove('up')
+})
+voltar2.addEventListener('click', () => {
+    ecras[1].classList.remove('up')
 })
 
 botoesEscolhe.forEach ( btn => {
