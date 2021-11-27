@@ -25,8 +25,16 @@ body
     height: 100vh;
     overflow: hidden; /*BARRA DE SCROLL DOWN, HIDDEN ESCONDIDA*/
     margin: 0;
+    text-align: center;
     /*overflow-x: hidden; /*REMOVER BARRA DE SCROLL HORIZONTAL*/
     /* min-height: 100vh; */
+}
+a{
+    color: #fff;
+}
+
+h1{
+    line-height: 1.4;
 }
 
 .btn {
@@ -36,6 +44,8 @@ body
     padding: 15px 20px;
     font-family: inherit;
     cursor: pointer;
+    /* width: 150px;
+    height: 150px; */
 }
 .btn:focus{
     outline: 0;
@@ -51,10 +61,33 @@ body
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    transition: margin 0.5s ease-out;
 }
 
 .screen.up{
-    margin-top: -200vh;
+    margin-top: -100vh;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista li{
+    margin: 10px;
+}
+
+.escolheBtn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
 }
 
 .escolheBtn img{
@@ -63,6 +96,71 @@ body
     object-fit: contain;
 }
 
+.escolheBtn:hover{
+    background-color: #fff;
+    color: var(--blue-cor);
+}
+
+.escolheBtn:active{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.gameMain {
+    position: relative;
+}
+
+#tempo,#score{
+    position: absolute;
+    top: 20px;
+}
+#tempo{
+    left: 20px;
+}
+#score{
+    right: 20px;
+}
+
+#msg{
+    line-height: 1.7;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    transition: transform 0.4s ease-in;
+}
+#msg.visivel{
+    transform: translate(-50%,150%);
+    opacity: 1;
+}
+
+.inseto {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+    /* top: 200px;
+    left: 300px;   */
+}
+
+.inseto.off{
+    transform: translate(-50%,-50%) scale(0);
+}
+
+.inseto img{
+    width: 100px;
+    height: 100px;
+}
 
 /*KEYFRAMES //////////////////////////////////////////////////*/
 
