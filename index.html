@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- <link rel='stylesheet' href=style.css> -->
+    <link rel='stylesheet' href=style.css>
+    
+    
+    <title>Apanha os Insectos</title>
+
+</head>
+<body>
+    <div class="screen">
+        <h1>Apanha o Insecto</h1>
+        <button class="btn" id="start">Play</button>
+    </div>
+
+    <div class="screen">
+        <h1>Escolha um Insecto</h1>
+        <ul class="lista">
+            <li>
+                <button class="escolheBtn">
+                    <p>Mosca</p>
+                    <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="fly"/>
+                </button>
+            </li>
+            <li>
+                <button class="escolheBtn">
+                    <p>Mosquito</p>
+                    <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="mosquito"/>
+                </button>
+            </li>
+            <li>
+                <button class="escolheBtn">
+                    <p>Aranha</p>
+                    <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="aranha"/>
+                </button>
+            </li>
+            <li>
+                <button class="escolheBtn">
+                    <p>Barata</p>
+                    <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png"alt="barata"/>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen gameMain">
+        <h3 id="tempo">Tempo: 00:00</h3>
+        <h3 id="score">Score: 0</h3>
+        <h5 id="msg">
+            Aborrecido?<br>O jogo não tem fim...
+        </h5>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
